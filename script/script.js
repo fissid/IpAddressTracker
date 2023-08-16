@@ -9,10 +9,19 @@ const eaches = document.querySelectorAll(".each");
 const errorMsg = document.querySelector(".error-msg");
 
 const displayMap = function (coordinates) {
-  let map = L.map("map", {
-    center: coordinates,
-    zoom: 13,
-  });
+  var map = L.map("map").setView(coordinates, 15);
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  L.marker(coordinates).addTo(map);
+  var circle = L.circle(coordinates, {
+    color: "#777",
+    fillColor: "#aaa",
+    fillOpacity: 0.5,
+    radius: 500,
+  }).addTo(map);
 };
 
 const displayError = function () {
