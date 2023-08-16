@@ -15,7 +15,7 @@ main {
   height: 35vh;
   width: 100%;
   background-size: cover;
-  background-image: url("../images/pattern-bg-desktop.png");
+  background-image: url("../img/pattern-bg-desktop.png");
   background-repeat: no-repeat;
   z-index: 50;
 }
@@ -24,7 +24,6 @@ main {
   height: 65vh;
   width: 100%;
   z-index: 1;
-  /* background-image: url("../images/map.PNG"); */
 }
 
 .box {
