@@ -1,0 +1,20 @@
+@keyframes vibrate {
+  0% {
+    background-image: linear-gradient(to top left, rgba($color-white, 0.8), $color-bootstrap-success);
+  }
+  33% {
+    background-image: linear-gradient(to bottom left, rgba($color-white, 0.8), $color-bootstrap-success);
+  }
+  66% {
+    background-image: linear-gradient(to bottom right, rgba($color-white, 0.8), $color-bootstrap-success);
+  }
+  100% {
+    background-image: linear-gradient(to top right, rgba($color-white, 0.8), $color-bootstrap-success);
+  }
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
