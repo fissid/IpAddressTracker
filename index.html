@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,49 +7,38 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script defer src="https://kit.fontawesome.com/dc35ddc557.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <link rel="stylesheet" href="./style/style.css" />
-    <script defer src="./script/script.js"></script>
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./src/scripts/controller.js" type="module"></script>
+    <link rel="stylesheet" href="./src/style/style.css" />
     <title>IP Address Tracker</title>
   </head>
   <body>
-    <main>
-      <div class="back">
-        <div class="py-2 container d-flex flex-column justify-content-center align-items-center">
-          <h2 class="text-white pt-2 title">IP Address Tracker</h2>
+    <header class="d-flex flex-column align-items-center">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay loop muted>
+          <source src="./src/img/bg-code.mp4" type="video/mp4" />
+          <source src="./src/img/bg-code.webm" type="video/webm" />
+        </video>
+      </div>
+      <h2 class="text-uppercase title">Where is This Address?</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" id="IpInput" class="form-control" placeholder="Search for any IP address" required />
+          <label for="IpInput" class="label text-uppercase">ip address :</label>
 
-          <div class="input-group w-50 pt-1">
-            <input type="text" class="form-control form-control-lg input-ip" placeholder="Search for any IP address" />
-            <div class="input-group-append">
-              <button class="btn btn-dark btn-lg" id="arrow">&#8250;</button>
-            </div>
+          <div class="input-group-append">
+            <button class="btn btn-success">
+              <svg>
+                <use href="./src/img/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="map" id="map"></div>
-      <div class="container d-flex justify-content-around align-items-center box bg-white">
-        <div class="each">
-          <small class="text-secondary text-uppercase">ip address</small>
-          <h5 class="pt-3 ip"></h5>
-        </div>
-        <div class="each">
-          <small class="text-secondary text-uppercase">location</small>
-          <h5 class="pt-3 loc"></h5>
-        </div>
-        <div class="each">
-          <small class="text-secondary text-uppercase">timezone</small>
-          <h5 class="pt-3 time"></h5>
-        </div>
-        <div class="each border-0">
-          <small class="text-secondary text-uppercase">isp</small>
-          <h5 class="pt-3 isp"></h5>
-        </div>
-        <div class="error-msg text-center d-none">
-          <h2 class="text-primary">Something went Wrong</h2>
-          <h3 class="text-danger border-top">Insert a new IP address</h3>
-        </div>
-      </div>
+      </form>
+    </header>
+    <main>
+      <div class="info d-flex"></div>
     </main>
-    <footer></footer>
+    <div class="map" id="map"></div>
   </body>
 </html>
