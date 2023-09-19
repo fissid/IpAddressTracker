@@ -1,3 +1,4 @@
-const IPFY_KEY = "at_IuRcVtL23RZ4yIEI5M0PUcXVGfOvo";
+export const KEY = "?token=5d56181cf41b90";
 
-export const IPFY_URL = `https://geo.ipify.org/api/v2/country,city?apiKey=${IPFY_KEY}&ipAddress=`;
+// ipinfo.io/88.227.66.69?token=5d56181cf41b90
+export const LOOKUP_API_URL = "https://ipinfo.io/";

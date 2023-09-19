@@ -1,48 +1,48 @@
-import { async } from "regenerator-runtime";
-import * as model from "./model";
-import infoView from "./view/infoView";
-import mapView from "./view/mapView";
-
-// if(module.hot){
-//   module.hot.accept()
-// }
+import * as model from "./model.js";
+import InfoView from "./view/infoView.js";
+import mapView from "./view/mapView.js";
+import MapView from "./view/mapView.js";
 
 const controlUserLocalIP = async function () {
   try {
-    infoView.renderSpinner();
-    // empty input will return user info
-    await model.loadIpInfo();
-    infoView.render(model.state);
+    // load info of origin location
+    InfoView.renderSpinner();
+    await model.loadLocalIpInfo();
+    InfoView.render(model.state);
 
-    mapView.renderSpinner();
+    // load map of origin location
+    MapView.renderSpinner();
     await model.loadMap();
-    mapView.render(model.state.map);
+    MapView.render(model.state.map);
   } catch (err) {
-    infoView.renderError();
-    mapView.renderError();
+    InfoView.renderErr();
+    MapView.renderError();
+    console.error(err);
   }
 };
 
 const controlUserInputIP = async function (ip) {
   try {
-    infoView.renderSpinner();
+    if (!ip) return;
+    // load info of input location
+    InfoView.renderSpinner();
+    await model.loadInputIpInfo(ip);
+    InfoView.render(model.state);
 
-    await model.loadIpInfo(ip);
-    infoView.render(model.state);
-
-    mapView.renderSpinner();
+    // load map of origin location
+    MapView.renderSpinner();
     mapView.clearMap();
     await model.loadMap();
-    mapView.render(model.state.map);
+    MapView.render(model.state.map);
   } catch (err) {
-    infoView.renderError();
-    mapView.renderError();
+    InfoView.renderErr(`Private IP`);
+    MapView.renderError();
+    console.error(err);
   }
 };
 
 const init = function () {
-  // pass initializer function to view to when an specific happened fire the function.
-  infoView.addHandleruser(controlUserLocalIP);
-  infoView.addHandlerUserInput(controlUserInputIP);
+  InfoView.addHandlerUserInfo(controlUserLocalIP);
+  InfoView.addHandlerUserInput(controlUserInputIP);
 };
 init();
