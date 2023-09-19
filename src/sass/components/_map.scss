@@ -1,0 +1,8 @@
+.map {
+  z-index: 0;
+  height: 60vh;
+  width: 100%;
+  @include respond(tablet-port) {
+    height: 70vh;
+  }
+}

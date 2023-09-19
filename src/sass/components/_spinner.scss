@@ -1,0 +1,14 @@
+.spinner {
+  text-align: center;
+  &--map {
+    padding: 10rem;
+    // opacity: 0.3;
+  }
+  svg {
+    height: 10rem;
+    width: 10rem;
+    fill: $color-bg-light;
+    animation: rotate 4s infinite linear;
+    animation-fill-mode: forwards;
+  }
+}
