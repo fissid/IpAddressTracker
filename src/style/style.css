@@ -72,17 +72,17 @@ html {
     font-size: 56.25%;
   }
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 68.75em) {
   html {
     font-size: 45%;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   html {
     font-size: 35%;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 30em) {
   html {
     font-size: 30%;
   }
@@ -102,7 +102,7 @@ body ::selection {
 .btn-success {
   border-radius: 0 5px 5px 0;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   .btn-success {
     height: 8rem;
   }
@@ -117,7 +117,7 @@ header {
   position: relative;
   padding: 2rem;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 68.75em) {
   header {
     height: 30vh;
   }
@@ -158,7 +158,7 @@ header .title {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   header .title {
     padding: 2rem;
   }
@@ -169,13 +169,13 @@ header .input-group {
   box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
   position: relative;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   header .input-group {
     width: 80rem;
     height: 8rem;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 30em) {
   header .input-group {
     width: 50rem;
   }
@@ -290,7 +290,7 @@ header svg {
   height: 60vh;
   width: 100%;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 68.75em) {
   .map {
     height: 70vh;
   }
@@ -314,7 +314,7 @@ header svg {
   -webkit-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   .info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -327,7 +327,7 @@ header svg {
     width: 50rem;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 30em) {
   .info {
     margin-top: 3rem;
   }
@@ -337,7 +337,7 @@ header svg {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   .info--box {
     text-align: center;
     border-left: 0;
@@ -355,7 +355,7 @@ header svg {
   font-size: 3.5rem;
   padding-left: 3rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 55em) {
   .info--box__text {
     padding-left: 0;
     padding-top: 1rem;
