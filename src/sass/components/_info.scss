@@ -10,6 +10,10 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 1rem 5rem rgba($color-black, 0.7);
+  // @include respond(tablet-port) {
+  //   width: 30rem;
+  //   background: #000;
+  // }
   @include respond(big-phone) {
     flex-flow: column nowrap;
     // justify-content: center;
