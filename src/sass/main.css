@@ -47,6 +47,11 @@ html {
     font-size: 30%;
   }
 }
+@media only screen and (max-width: 21.3125em) {
+  html {
+    font-size: 26%;
+  }
+}
 
 body {
   background-color: #333;
