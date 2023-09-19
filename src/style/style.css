@@ -1,0 +1,363 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap");
+@-webkit-keyframes vibrate {
+  0% {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.8), #198754);
+  }
+  33% {
+    background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.8), #198754);
+  }
+  66% {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), #198754);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.8), #198754);
+  }
+}
+@keyframes vibrate {
+  0% {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: -o-linear-gradient(bottom right, rgba(255, 255, 255, 0.8), #198754);
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.8), #198754);
+  }
+  33% {
+    background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: -o-linear-gradient(top right, rgba(255, 255, 255, 0.8), #198754);
+    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.8), #198754);
+  }
+  66% {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: -o-linear-gradient(top left, rgba(255, 255, 255, 0.8), #198754);
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), #198754);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.8)), to(#198754));
+    background-image: -o-linear-gradient(bottom left, rgba(255, 255, 255, 0.8), #198754);
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.8), #198754);
+  }
+}
+@-webkit-keyframes rotate {
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+}
+body {
+  background-color: #333;
+  font-family: "Handjet", cursive;
+}
+body ::-moz-selection {
+  background-color: rgba(91, 190, 115, 0.6);
+  color: #fff;
+}
+body ::selection {
+  background-color: rgba(91, 190, 115, 0.6);
+  color: #fff;
+}
+.btn-success {
+  border-radius: 0 5px 5px 0;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn-success {
+    height: 8rem;
+  }
+}
+main {
+  position: relative;
+}
+header {
+  background: rgba(51, 51, 51, 0.8);
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  padding: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  header {
+    height: 30vh;
+  }
+}
+header .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%) brightness(90%) sepia(50%) hue-rotate(100deg) saturate(500%);
+  filter: grayscale(100%) brightness(90%) sepia(50%) hue-rotate(100deg) saturate(500%);
+}
+header .bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+header .title {
+  font-size: 8rem;
+  text-shadow: 1rem 1rem 5rem rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 1.5rem;
+  -webkit-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  transform: skew(-20deg);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: vibrate 1s infinite ease-in-out 0.1s;
+  animation: vibrate 1s infinite ease-in-out 0.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 37.5em) {
+  header .title {
+    padding: 2rem;
+  }
+}
+header .input-group {
+  width: 85rem;
+  -webkit-box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  header .input-group {
+    width: 80rem;
+    height: 8rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  header .input-group {
+    width: 50rem;
+  }
+}
+header .input-group .form-control::-moz-placeholder {
+  color: #234d29;
+  font-size: 3.2rem !important;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+header .input-group .form-control::-webkit-input-placeholder {
+  color: #234d29;
+  font-size: 3.2rem !important;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+header .input-group .form-control:-ms-input-placeholder {
+  color: #234d29;
+  font-size: 3.2rem !important;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+header .input-group .form-control::-ms-input-placeholder {
+  color: #234d29;
+  font-size: 3.2rem !important;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+header .input-group .form-control,
+header .input-group .form-control::placeholder {
+  color: #234d29;
+  font-size: 3.2rem !important;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+header .input-group .form-control {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(#198754));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.1), #198754);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), #198754);
+  border: 0;
+  border-radius: 5px 0 0 5px;
+}
+header .input-group .form-control:focus {
+  outline: 0;
+  border: 0;
+  -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+header .input-group .label {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  z-index: 5;
+  top: -2.5rem;
+  left: 5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header .input-group .form-control:-moz-placeholder-shown + .label {
+  opacity: 0;
+  visibility: none;
+}
+header .input-group .form-control:-ms-input-placeholder + .label {
+  opacity: 0;
+  visibility: none;
+}
+header .input-group .form-control:placeholder-shown + .label {
+  opacity: 0;
+  visibility: none;
+}
+header .input-group .input-group-append {
+  border: 0;
+}
+header svg {
+  height: 5rem;
+  width: 5rem;
+  fill: #fff;
+}
+.spinner {
+  text-align: center;
+}
+.spinner--map {
+  padding: 10rem;
+}
+.spinner svg {
+  height: 10rem;
+  width: 10rem;
+  fill: #bbb;
+  -webkit-animation: rotate 4s infinite linear;
+  animation: rotate 4s infinite linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.error {
+  text-align: center;
+  color: #333;
+}
+.error--map {
+  padding: 10rem;
+}
+.error svg {
+  height: 8rem;
+  width: 8rem;
+  fill: #333;
+}
+.error h2 {
+  font-size: 2.5rem;
+}
+.map {
+  z-index: 0;
+  height: 60vh;
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .map {
+    height: 70vh;
+  }
+}
+.info {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 190, 115, 0.3)), to(rgba(25, 135, 84, 0.99)));
+  background-image: -o-linear-gradient(top, rgba(91, 190, 115, 0.3), rgba(25, 135, 84, 0.99));
+  background-image: linear-gradient(to bottom, rgba(91, 190, 115, 0.3), rgba(25, 135, 84, 0.99));
+  width: 120rem;
+  padding: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 37.5em) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 8rem;
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .info {
+    margin-top: 3rem;
+  }
+}
+.info--box {
+  padding: 1rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 37.5em) {
+  .info--box {
+    text-align: center;
+    border-left: 0;
+  }
+  .info--box:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+.info--box__title {
+  color: #5bbe73;
+  font-size: 2.5rem;
+}
+.info--box__text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 3.5rem;
+  padding-left: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .info--box__text {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}
