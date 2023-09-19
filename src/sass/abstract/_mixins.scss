@@ -1,21 +1,21 @@
 @mixin respond($breakpoint) {
-  // 400px and lesser
+  // 480px and lesser
   @if $breakpoint==small-phone {
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 30em) {
       @content;
     }
   }
 
-  // 600px and lesser
+  // 880px and lesser
   @if $breakpoint==big-phone {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 55em) {
       @content;
     }
   }
 
-  // 900px and lesser
+  // 1100px and lesser
   @if $breakpoint==tablet-port {
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 68.75em) {
       @content;
     }
   }
@@ -29,7 +29,7 @@
 
   // 1800px and greater
   @if $breakpoint==big-desktop {
-    @media only screen and (max-width: 112.5em) {
+    @media only screen and (min-width: 112.5em) {
       @content;
     }
   }
