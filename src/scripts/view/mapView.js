@@ -1,55 +1,59 @@
-import icons from "../../img/icons.svg";
-
 class MapView {
   _data;
-  _parentElement = document.querySelector(".map");
-  _backElement = document.querySelector(".back");
-  _errorMsg = "Oops, Something happened, Please try again.";
+  _parentElement = document.querySelector("main");
+  _mapElement = document.querySelector("#map");
 
+  _clear() {
+    this._mapElement.innerHTML = "";
+  }
   render(map) {
-    const coordinates = [map._lastCenter.lat - 0.005, map._lastCenter.lng];
+    const coordinates = [map._lastCenter.lat, map._lastCenter.lng];
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    L.marker(coordinates).addTo(map);
+    var myIcon = L.icon({
+      iconUrl: "./src/img/finalLocIcon.svg",
+      iconSize: [100, 150],
+      iconAnchor: [50, 90],
+    });
+    L.marker(coordinates, { icon: myIcon }).addTo(map);
     var circle = L.circle(coordinates, {
-      color: "#aaa",
-      fillColor: "#777",
-      fillOpacity: 0.3,
-      radius: 3500,
+      color: "#234d2980",
+      fillColor: "#198754",
+      fillOpacity: 0.45,
+      radius: 7500,
     }).addTo(map);
   }
+
   clearMap() {
     const mapHtml = "<div class='map' id='map'></div>";
-    this._parentElement.remove();
-    this._backElement.insertAdjacentHTML("afterend", mapHtml);
+    this._mapElement.remove();
+    this._parentElement.insertAdjacentHTML("afterend", mapHtml);
   }
 
   renderSpinner() {
     const spinnerHtml = `
-    <div class="spinner">
+    <div class="spinner spinner--map">
       <svg>
-        <use href="${icons}#icon-loader"></use>
+        <use href="./src/img/icons.svg#icon-loader"></use>
       </svg>
     </div>`;
     this._clear();
-    this._parentElement.insertAdjacentHTML("afterbegin", spinnerHtml);
+    this._mapElement.insertAdjacentHTML("afterbegin", spinnerHtml);
   }
 
   renderError() {
     const errorHtml = `
-    <div class="error text-center">
+    <div class="error error--map text-center">
       <svg>
-        <use href="${icons}#icon-alert-triangle"></use>
+        <use href="./src/img/icons.svg#icon-alert-triangle"></use>
       </svg>
-      <h2>Oops, Something went wrong, Please try again.</h2>
+      <h2>Please try again</h2>
     </div>`;
     this._clear();
-    this._parentElement.insertAdjacentHTML("afterbegin", errorHtml);
-  }
-  _clear() {
-    this._parentElement.innerHTML = "";
+    this._mapElement.insertAdjacentHTML("afterbegin", errorHtml);
   }
 }
+
 export default new MapView();
