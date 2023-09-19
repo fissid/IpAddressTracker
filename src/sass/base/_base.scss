@@ -5,8 +5,21 @@
 }
 
 html {
-  // 10px = 1rem
+  // 1rem = 10px
   font-size: 62.5%;
+  @include respond(tablet-land) {
+    // 1rem = 9px
+    font-size: 56.25%;
+  }
+  @include respond(tablet-port) {
+    font-size: 45%;
+  }
+  @include respond(big-phone) {
+    font-size: 35%;
+  }
+  @include respond(small-phone) {
+    font-size: 30%;
+  }
 }
 
 body {
