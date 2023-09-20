@@ -50,7 +50,7 @@ header {
     position: relative;
     @include respond(big-phone) {
       // width: 80rem;
-      height: 8rem;
+      // height: 8rem;
     }
 
     @include respond(small-phone) {
