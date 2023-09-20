@@ -94,9 +94,6 @@ header {
     width: 65vw;
     box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
     position: relative; }
-    @media only screen and (max-width: 55em) {
-      header .input-group {
-        height: 8rem; } }
     header .input-group .form-control,
     header .input-group .form-control::placeholder {
       color: #234d29;
@@ -176,10 +173,10 @@ header {
     .info {
       flex-flow: column nowrap;
       align-items: center;
-      margin-top: 8rem; } }
+      margin-top: 10rem; } }
   @media only screen and (max-width: 30em) {
     .info {
-      margin-top: 3rem; } }
+      margin-top: 8rem; } }
   .info--box {
     padding: 1rem;
     border-left: 2px solid rgba(255, 255, 255, 0.5);
