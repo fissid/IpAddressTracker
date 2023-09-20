@@ -44,16 +44,17 @@ header {
   }
 
   .input-group {
-    width: 85rem;
+    // width: 85rem;
+    width: 65vw;
     box-shadow: 0 1rem 8rem rgba($color-white, 0.4);
     position: relative;
     @include respond(big-phone) {
-      width: 80rem;
+      // width: 80rem;
       height: 8rem;
     }
 
     @include respond(small-phone) {
-      width: 50rem;
+      // width: 50rem;
     }
 
     .form-control,
