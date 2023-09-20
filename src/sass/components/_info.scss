@@ -14,11 +14,11 @@
   @include respond(big-phone) {
     flex-flow: column nowrap;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 10rem;
     // width: 50rem;
   }
   @include respond(small-phone) {
-    margin-top: 3rem;
+    margin-top: 8rem;
   }
   &--box {
     padding: 1rem;
