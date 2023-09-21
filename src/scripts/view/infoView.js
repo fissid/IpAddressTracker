@@ -84,7 +84,7 @@ class InfoView {
 
       parts.forEach((part) => {
         // check whether each part starts by 0
-        if (part.startsWith("0")) throw new Error("Parts can not start by 0");
+        if (part.startsWith("0")) throw new Error("Parts can not be started with 0");
 
         const each = Number(part);
         // check whether each part to be between 0-255
