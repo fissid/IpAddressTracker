@@ -1,7 +1,6 @@
 # IP Address Tracker Web App
 
 ![IP Address Tracker - Desktop](https://github.com/fissid/IpAddressTracker/blob/a073cbca0f4e690d1302deca05276a91b92d638e/src/img/landing.PNG)
-![IP Address Tracker - Mobile](https://github.com/fissid/IpAddressTracker/blob/a073cbca0f4e690d1302deca05276a91b92d638e/src/img/landing-mobile.jpeg)
 
 Welcome to the IP Address Tracker web app! With this tool, you can easily find information related to any public IP address in the world by simply entering it. Please note that since the APIs used in this project are free and public, the information provided may not always be completely accurate.
 
