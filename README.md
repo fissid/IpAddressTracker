@@ -14,7 +14,7 @@ To ensure accurate results, the input box accepts only decimal numbers and dots.
 
 1. If the inserted IP address is not a complete address (missing one or more parts out of four), an error message will be displayed.
 
-   ![Error: Incomplete IP Address](src/img/parts-error.PNG)
+   ![Error: Incomplete IP Address](https://github.com/fissid/IpAddressTracker/blob/1119938f04620e939b0e38ac6d5919357beac668/src/img/parts-error.PNG)
 
 2. If any part of the inserted IP address is greater than 256, the following error message will be shown:
 
