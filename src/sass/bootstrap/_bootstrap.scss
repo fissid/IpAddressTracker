@@ -1,6 +1,6 @@
 .btn-success {
   border-radius: 0 5px 5px 0;
   @include respond(big-phone) {
-    height: 8rem;
+    height: 6rem !important;
   }
 }
