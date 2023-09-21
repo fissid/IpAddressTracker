@@ -71,7 +71,7 @@ body ::selection {
 }
 @media only screen and (max-width: 55em) {
   .btn-success {
-    height: 6rem;
+    height: 6rem !important;
   }
 }
 
@@ -134,8 +134,8 @@ header .input-group {
 }
 @media only screen and (max-width: 55em) {
   header .input-group {
-    width: 70vw;
-    height: 6rem;
+    width: 70vw !important;
+    height: 6rem !important;
   }
 }
 header .input-group .form-control::-moz-placeholder {
@@ -250,12 +250,12 @@ header svg {
   .info {
     flex-flow: column nowrap;
     align-items: center;
-    margin-top: 10rem;
+    transform: translate(-50%, -25%);
   }
 }
 @media only screen and (max-width: 30em) {
   .info {
-    margin-top: 8rem;
+    transform: translate(-50%, -30%);
   }
 }
 .info--box {
