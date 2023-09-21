@@ -22,7 +22,7 @@ To ensure accurate results, the input box accepts only decimal numbers and dots.
 
 3. If any part of the inserted IP address starts with zero, an error message will be displayed:
 
-   ![Error: IP Starts with Zero](https://github.com/fissid/IpAddressTracker/blob/f124dbdf60fba5be1e2513192f4b261a8d4c8f4f/src/img/zero-error.PNG)
+   ![Error: IP Starts with Zero](https://github.com/fissid/IpAddressTracker/blob/a0251b641e7d63ffe68d576a74867fa27c73e143/src/img/zero-error.PNG)
 
 4. If the inserted IP address is a private IP address, a warning message will be shown:
 
