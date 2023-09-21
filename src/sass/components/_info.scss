@@ -5,7 +5,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-around;
-  background-image: linear-gradient(to bottom, rgba($color-bg-primary, 0.3), rgba($color-bootstrap-success, 0.99));
+  background-image: linear-gradient(to bottom, rgba($color-bg-primary, 0.65), rgba($color-bootstrap-success, 0.99));
   // width: 120rem;
   width: 70vw;
   padding: 2rem;
@@ -14,11 +14,13 @@
   @include respond(big-phone) {
     flex-flow: column nowrap;
     align-items: center;
-    margin-top: 10rem;
+    transform: translate(-50%, -25%);
+    // margin-top: 10rem;
     // width: 50rem;
   }
   @include respond(small-phone) {
-    margin-top: 8rem;
+    transform: translate(-50%, -30%);
+    // margin-top: 8rem;
   }
   &--box {
     padding: 1rem;
@@ -32,7 +34,7 @@
       }
     }
     &__title {
-      color: $color-bg-primary;
+      color: $color-text-mid;
       font-size: 2.5rem;
     }
     &__text {
