@@ -1,6 +1,7 @@
 # IP Address Tracker Web App
 
-![IP Address Tracker](image-link-here)
+![IP Address Tracker - Desktop](https://github.com/fissid/IpAddressTracker/blob/a073cbca0f4e690d1302deca05276a91b92d638e/src/img/landing.PNG)
+![IP Address Tracker - Mobile](https://github.com/fissid/IpAddressTracker/blob/a073cbca0f4e690d1302deca05276a91b92d638e/src/img/landing-mobile.jpeg)
 
 Welcome to the IP Address Tracker web app! With this tool, you can easily find information related to any public IP address in the world by simply entering it. Please note that since the APIs used in this project are free and public, the information provided may not always be completely accurate.
 
@@ -16,17 +17,17 @@ To ensure accurate results, the input box accepts only decimal numbers and dots.
 
    ![Error: Incomplete IP Address](https://github.com/fissid/IpAddressTracker/blob/1119938f04620e939b0e38ac6d5919357beac668/src/img/parts-error.PNG)
 
-2. If any part of the inserted IP address is greater than 256, the following error message will be shown:
+2. If any part of the inserted IP address is greater than 255, the following error message will be shown:
 
-   ![Error: Invalid IP Range](error-image-link-2)
+   ![Error: Invalid IP Range](https://github.com/fissid/IpAddressTracker/blob/f124dbdf60fba5be1e2513192f4b261a8d4c8f4f/src/img/255%20error.PNG)
 
 3. If any part of the inserted IP address starts with zero, an error message will be displayed:
 
-   ![Error: IP Starts with Zero](error-image-link-3)
+   ![Error: IP Starts with Zero](https://github.com/fissid/IpAddressTracker/blob/f124dbdf60fba5be1e2513192f4b261a8d4c8f4f/src/img/zero-error.PNG)
 
 4. If the inserted IP address is a private IP address, a warning message will be shown:
 
-   ![Warning: Private IP Address](error-image-link-4)
+   ![Warning: Private IP Address](https://github.com/fissid/IpAddressTracker/blob/f124dbdf60fba5be1e2513192f4b261a8d4c8f4f/src/img/private.PNG)
 
 ### APIs Used
 
