@@ -43,6 +43,7 @@ I welcome your feedback, suggestions, and contributions to this project. If you 
 ## Live Demo
 
 You can check out the live demo of this project [here](https://fissid.github.io/IpAddressTracker/). Explore and enjoy the IP Address Tracker!
-</hr>
+
+---
 
 Thank you for exploring the IP Address Tracker project. I hope you find it informative and enjoyable!
