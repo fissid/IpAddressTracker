@@ -48,13 +48,13 @@ header {
     width: 65vw;
     box-shadow: 0 1rem 8rem rgba($color-white, 0.4);
     position: relative;
+
     @include respond(big-phone) {
-      // width: 80rem;
-      // height: 8rem;
+      width: 70vw !important;
+      height: 6rem !important;
     }
 
     @include respond(small-phone) {
-      // width: 50rem;
     }
 
     .form-control,
@@ -93,6 +93,9 @@ header {
 
     .input-group-append {
       border: 0;
+      @include respond(big-phone) {
+        height: 6rem;
+      }
     }
   }
 
