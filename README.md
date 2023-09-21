@@ -6,7 +6,9 @@ Welcome to the IP Address Tracker web app! With this tool, you can easily find i
 
 ## Getting Started
 
-When you open this web app, it will initially display information about the location of your internet connection, including your public IP address on the internet. You can then use the input box at the top of the page to enter a decimal IP address.
+Welcome to the IP Address Tracker web app! With this tool, you can easily find information related to any public IP address in the world by simply entering it. Please note that since the APIs used in this project are free and public, the information provided may not always be completely accurate.
+
+**Mobile Design:** Each version of this web app includes its own mobile design, ensuring a seamless experience for users on smartphones and tablets.
 
 ### Input Validation
 
