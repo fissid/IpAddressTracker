@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 10 version
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap");
 @-webkit-keyframes vibrate {
   0% {
@@ -109,7 +102,7 @@ body ::selection {
 }
 @media only screen and (max-width: 55em) {
   .btn-success {
-    height: 8rem;
+    height: 6rem;
   }
 }
 main {
@@ -173,6 +166,12 @@ header .input-group {
   -webkit-box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
   box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
   position: relative;
+}
+@media only screen and (max-width: 55em) {
+  header .input-group {
+    width: 70vw;
+    height: 6rem;
+  }
 }
 header .input-group .form-control::-moz-placeholder {
   color: #234d29;
@@ -244,6 +243,11 @@ header .input-group .form-control:placeholder-shown + .label {
 header .input-group .input-group-append {
   border: 0;
 }
+@media only screen and (max-width: 55em) {
+  header .input-group .input-group-append {
+    height: 6rem;
+  }
+}
 header svg {
   height: 5rem;
   width: 5rem;
@@ -299,9 +303,9 @@ header svg {
   transform: translate(-50%, -50%);
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 190, 115, 0.3)), to(rgba(25, 135, 84, 0.99)));
-  background-image: -o-linear-gradient(top, rgba(91, 190, 115, 0.3), rgba(25, 135, 84, 0.99));
-  background-image: linear-gradient(to bottom, rgba(91, 190, 115, 0.3), rgba(25, 135, 84, 0.99));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 190, 115, 0.65)), to(rgba(25, 135, 84, 0.99)));
+  background-image: -o-linear-gradient(top, rgba(91, 190, 115, 0.65), rgba(25, 135, 84, 0.99));
+  background-image: linear-gradient(to bottom, rgba(91, 190, 115, 0.65), rgba(25, 135, 84, 0.99));
   width: 70vw;
   padding: 2rem;
   border-radius: 10px;
@@ -340,7 +344,7 @@ header svg {
   }
 }
 .info--box__title {
-  color: #5bbe73;
+  color: #234d29;
   font-size: 2.5rem;
 }
 .info--box__text {
