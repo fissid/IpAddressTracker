@@ -133,7 +133,7 @@ header .title {
   }
 }
 header .input-group {
-  width: 65vw;
+  width: 67vw;
   box-shadow: 0 1rem 8rem rgba(255, 255, 255, 0.4);
   position: relative;
 }
@@ -221,6 +221,21 @@ header svg {
   height: 60vh;
   width: 100%;
 }
+@media only screen and (max-width: 48em) and (max-height: 64em) {
+  .map {
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
+  .map {
+    height: 67vh;
+  }
+}
+@media only screen and (max-width: 23.4375em) and (max-height: 50.75em) {
+  .map {
+    height: 70vh;
+  }
+}
 
 .info {
   z-index: 1;
@@ -250,11 +265,17 @@ header svg {
     flex-flow: column nowrap;
     align-items: center;
     transform: translate(-50%, -20%);
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 38em) and (max-height: 49.25em) {
+  .info {
+    transform: translate(-50%, -15%);
   }
 }
 @media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
   .info {
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -20%);
   }
 }
 .info--box {
