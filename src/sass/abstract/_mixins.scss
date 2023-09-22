@@ -1,42 +1,70 @@
 @mixin respond($breakpoint) {
-  // 340px and lesser
-  @if $breakpoint==init-phone {
-    @media only screen and (max-width: 21.3125em) {
+  // 360x640
+  @if $breakpoint==mobile-1 {
+    @media only screen and (max-width: 22.5em) and (max-height: 40em) {
       @content;
     }
   }
 
-  // 480px and lesser
-  @if $breakpoint==small-phone {
-    @media only screen and (max-width: 30em) {
+  // 375x667
+  @if $breakpoint==mobile-2 {
+    @media only screen and (max-width: 23.4375em) and (max-height: 41.6875em) {
       @content;
     }
   }
 
-  // 880px and lesser
-  @if $breakpoint==big-phone {
-    @media only screen and (max-width: 55em) {
+  // 360x720
+  @if $breakpoint==mobile-3 {
+    @media only screen and (max-width: 22.5em) and (max-height: 45em) {
       @content;
     }
   }
 
-  // 1100px and lesser
-  @if $breakpoint==tablet-port {
-    @media only screen and (max-width: 68.75em) {
+  // 375x812
+  @if $breakpoint==mobile-4 {
+    @media only screen and (max-width: 23.4375em) and (max-height: 50.75em) {
       @content;
     }
   }
 
-  // 1200px and lesser
-  @if $breakpoint==tablet-land {
-    @media only screen and (max-width: 75em) {
+  // 481x768
+  @if $breakpoint==tablet-1 {
+    @media only screen and (max-width: 30.0625em) and (max-height: 48em) {
       @content;
     }
   }
 
-  // 1800px and greater
-  @if $breakpoint==big-desktop {
-    @media only screen and (min-width: 112.5em) {
+  // 608x850
+  @if $breakpoint==tablet-15 {
+    @media only screen and (max-width: 38em) and (max-height: 53.125em) {
+      @content;
+    }
+  }
+
+  // 768x1024
+  @if $breakpoint==tablet-2 {
+    @media only screen and (max-width: 48em) and (max-height: 64em) {
+      @content;
+    }
+  }
+
+  // 992x780
+  @if $breakpoint==tablet-3 {
+    @media only screen and (max-width: 62em) and (max-height: 48.75em) {
+      @content;
+    }
+  }
+
+  // 1366x768
+  @if $breakpoint==laptop {
+    @media only screen and (max-width: 85.375em) and (max-height: 48em) {
+      @content;
+    }
+  }
+
+  // 1792x1080
+  @if $breakpoint==big-screen {
+    @media only screen and (min-width: 112em) and (min-height: 67.5em) {
       @content;
     }
   }
