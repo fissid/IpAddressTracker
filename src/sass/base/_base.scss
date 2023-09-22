@@ -7,17 +7,19 @@
 html {
   // 1rem = 10px
   font-size: 62.5%;
-  @include respond(tablet-land) {
-    // 1rem = 9px
+  @include respond(tablet-2) {
     font-size: 56.25%;
   }
-  @include respond(tablet-port) {
+  @include respond(tablet-15) {
     font-size: 45%;
   }
-  @include respond(big-phone) {
+  @include respond(tablet-1) {
+    font-size: 40%;
+  }
+  @include respond(mobile-4) {
     font-size: 35%;
   }
-  @include respond(small-phone) {
+  @include respond(mobile-3) {
     font-size: 30%;
   }
 }
