@@ -2,7 +2,16 @@
   z-index: 0;
   height: 60vh;
   width: 100%;
-  @include respond(tablet-port) {
+  @include respond(tablet-2) {
+    height: 65vh;
+  }
+  @include respond(tablet-15) {
+    height: 70vh;
+  }
+  @include respond(tablet-1) {
+    height: 67vh;
+  }
+  @include respond(mobile-4) {
     height: 70vh;
   }
 }

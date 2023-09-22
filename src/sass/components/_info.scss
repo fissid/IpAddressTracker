@@ -6,27 +6,33 @@
   transform: translate(-50%, -50%);
   justify-content: space-around;
   background-image: linear-gradient(to bottom, rgba($color-bg-primary, 0.65), rgba($color-bootstrap-success, 0.99));
-  // width: 120rem;
   width: 70vw;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 1rem 5rem rgba($color-black, 0.7);
-  @include respond(big-phone) {
+  @include respond(laptop) {
+    transform: translate(-50%, -0%);
+  }
+  @include respond(tablet-3) {
+    transform: translate(-50%, -40%);
+  }
+  @include respond(tablet-2) {
     flex-flow: column nowrap;
     align-items: center;
-    transform: translate(-50%, -25%);
-    // margin-top: 10rem;
-    // width: 50rem;
+    transform: translate(-50%, -20%);
+    padding: 1rem;
   }
-  @include respond(small-phone) {
-    transform: translate(-50%, -30%);
-    // margin-top: 8rem;
+  @include respond(tablet-15) {
+    transform: translate(-50%, -15%);
+  }
+  @include respond(tablet-1) {
+    transform: translate(-50%, -20%);
   }
   &--box {
     padding: 1rem;
     border-left: 2px solid rgba(#fff, 0.5);
     text-transform: uppercase;
-    @include respond(big-phone) {
+    @include respond(tablet-2) {
       text-align: center;
       border-left: 0;
       &:not(:last-child) {
@@ -41,10 +47,6 @@
       color: rgba($color-white, 0.9);
       font-size: 3.5rem;
       padding-left: 3rem;
-      @include respond(big-phone) {
-        padding-left: 0;
-        padding-top: 1rem;
-      }
     }
   }
 }
