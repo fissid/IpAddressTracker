@@ -32,12 +32,12 @@ html {
     font-size: 56.25%;
   }
 }
-@media only screen and (max-width: 38em) and (max-height: 49.25em) {
+@media only screen and (max-width: 38em) and (max-height: 53.125em) {
   html {
-    font-size: 47%;
+    font-size: 45%;
   }
 }
-@media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
+@media only screen and (max-width: 30.0625em) and (max-height: 48em) {
   html {
     font-size: 40%;
   }
@@ -86,7 +86,12 @@ header {
     height: 35vh;
   }
 }
-@media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
+@media only screen and (max-width: 38em) and (max-height: 53.125em) {
+  header {
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 30.0625em) and (max-height: 48em) {
   header {
     height: 33vh;
   }
@@ -127,9 +132,9 @@ header .title {
   animation: vibrate 1s infinite ease-in-out 0.1s;
   animation-fill-mode: forwards;
 }
-@media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
+@media only screen and (max-width: 30.0625em) and (max-height: 48em) {
   header .title {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 header .input-group {
@@ -226,7 +231,12 @@ header svg {
     height: 65vh;
   }
 }
-@media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
+@media only screen and (max-width: 38em) and (max-height: 53.125em) {
+  .map {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 30.0625em) and (max-height: 48em) {
   .map {
     height: 67vh;
   }
@@ -268,12 +278,12 @@ header svg {
     padding: 1rem;
   }
 }
-@media only screen and (max-width: 38em) and (max-height: 49.25em) {
+@media only screen and (max-width: 38em) and (max-height: 53.125em) {
   .info {
     transform: translate(-50%, -15%);
   }
 }
-@media only screen and (max-width: 30.0625em) and (max-height: 49.25em) {
+@media only screen and (max-width: 30.0625em) and (max-height: 48em) {
   .info {
     transform: translate(-50%, -20%);
   }
