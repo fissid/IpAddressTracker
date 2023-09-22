@@ -4,7 +4,16 @@ header {
   height: 40vh;
   position: relative;
   padding: 2rem;
-  @include respond(tablet-port) {
+  @include respond(tablet-2) {
+    height: 35vh;
+  }
+  @include respond(tablet-15) {
+    height: 30vh;
+  }
+  @include respond(tablet-1) {
+    height: 33vh;
+  }
+  @include respond(mobile-4) {
     height: 30vh;
   }
 
@@ -15,7 +24,6 @@ header {
     height: 100%;
     width: 100%;
     z-index: -1;
-    // opacity: 0.5;
     overflow: hidden;
     filter: grayscale(100%) brightness(90%) sepia(50%) hue-rotate(100deg) saturate(500%);
     &__content {
@@ -38,24 +46,16 @@ header {
     color: transparent;
     animation: vibrate 1s infinite ease-in-out 0.1s;
     animation-fill-mode: forwards;
-    @include respond(big-phone) {
-      padding: 2rem;
+    @include respond(tablet-1) {
+      font-size: 6rem;
     }
   }
 
   .input-group {
-    // width: 85rem;
-    width: 65vw;
+    width: 67vw;
+
     box-shadow: 0 1rem 8rem rgba($color-white, 0.4);
     position: relative;
-
-    @include respond(big-phone) {
-      width: 70vw !important;
-      height: 6rem !important;
-    }
-
-    @include respond(small-phone) {
-    }
 
     .form-control,
     .form-control::placeholder {
@@ -93,9 +93,6 @@ header {
 
     .input-group-append {
       border: 0;
-      @include respond(big-phone) {
-        height: 6rem;
-      }
     }
   }
 
