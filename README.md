@@ -34,9 +34,9 @@ To ensure accurate results, the input box accepts only decimal numbers and dots.
 
 This web app utilizes two free APIs that you can also use in your projects:
 
-- [ipinfo.io](https://ipinfo.io/): Used to fetch IP address information such as city, region, ISP, and location coordinates (latitude and longitude).
+- [ipinfo](https://ipinfo.io/) Used to fetch IP address information such as city, region, ISP, and location coordinates (latitude and longitude).
 
-- [leafletjs.com](https://leafletjs.com/reference.html): Used to display the corresponding latitude and longitude on a map and draw a circle around it.
+- [leaflet](https://leafletjs.com/reference.html) Used to display the corresponding latitude and longitude on a map and draw a circle around it.
 
 ## Feedback and Contributions
 
